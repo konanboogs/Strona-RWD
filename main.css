@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.hero-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.hero-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+.hero-text h1 {
+	margin-bottom: 5;
+	text-shadow: 3px 3px 5px c#000;
+	color: #ddd;
+}
+
+.hero-text span {
+	text-transform: uppercase;
+	color: #09f;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	z-index:10;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #ddd;
+}
+
+.burger-icon {
+	display: block;
+	margin-left: auto;
+	padding: 0 30px;
+	background: none;
+	border: none;
+	line-height: 60px;
+	cursor: pointer;
+}
+.nav-items {
+	display: none;
+}
+.nav-items a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333;
+	transition: color 0.3s;
+}
+.nav-items a:hover {
+	color: #09f;
+}
+
+.header {
+	position: relative;
+	background-image: url('./img/las-mini.jpg');
+	height: 330px;
+	background-size: cover;
+	background-position: center;
+}
+
+.section-title{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+main{
+    margin: 60px 0;
+}
+
+.about-us-info{
+    margin-bottom: 10px;
+	padding: 0 20px;
+}
+
+.products{
+	position: relative;
+	margin: 60px auto;
+}
+
+.secend-product{
+	position: relative;
+	height: 400px;
+	background-image: url("./img/children-mini.jpg");
+	background-size: cover;
+	background-position:center;
+	text-align: center;
+}
+.third-product{
+	position: relative;
+	height: 400px;
+	background-image: url("./img/african-mini.jpg");
+	background-size: cover;
+	background-position:center;
+	text-align: center;
+}
+.four-product{
+	position: relative;
+	height: 400px;
+	background-image: url("./img/people-mini.jpg");
+	background-size: cover;
+	background-position:center;
+	text-align: center;
+}
+.first-product{
+	position: relative;
+	height: 400px;
+	background-image: url("./img/las-mini.jpg");
+	background-size: cover;
+	background-position:center;
+	text-align: center;
+}
+.product h3{
+	text-transform: uppercase;
+	transition: .3s;
+}
+.contact{
+	text-align: center;
+}
+
+.contact h3{
+text-transform: uppercase;
+margin: 20px 0 5px;
+}
+
+.product:hover h3{
+	transform: scale(1.6);
+}
+
+footer{
+	text-align: center;
+	padding: 30px 10px;
+	background-color: #ddd;
+}
+@media (min-width: 768px) {
+	.burger-icon {
+		display: none;
+	}
+	.nav-items {
+		display: block;
+	}
+
+	.header {
+		position: relative;
+		background-image: url('./img/las-big.jpg');
+		height: 400px;
+		background-size: cover;
+		background-position: center;
+	}
+    .hero-text h1{
+        font-size: 36px;
+    }
+    .hero-text p{
+        font-size: 18px;
+    }
+	.product h3{
+		font-size: 24px;
+	}
+}
+
+section{
+	scroll-margin-top: 80px
+}
+
+@media (min-width: 1200px){
+    .hero-text h1{
+        font-size: 42px;
+    }
+    .hero-text p{
+        font-size: 20px;
+    }
+@media (min-width: 992px){
+	.product-box{
+		font-size: 0;
+	}
+	
+	.product{
+		display: inline-block;
+		width: 50%;
+	}
+	
+} 
+}
